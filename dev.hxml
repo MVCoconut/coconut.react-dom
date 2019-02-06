@@ -1,0 +1,4 @@
+tests.hxml
+-lib travix
+-lib coconut.react-dom
+-js bin/js/tests.js

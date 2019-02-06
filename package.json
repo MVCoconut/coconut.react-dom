@@ -1,0 +1,9 @@
+{
+  "name": "@haxe/coconut.react-dom",
+  "dependencies": {
+    "lix": "=15.3.5"
+  },
+  "scripts": {
+    "postinstall": "lix download"
+  }
+}

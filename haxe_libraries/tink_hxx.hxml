@@ -1,0 +1,5 @@
+-D tink_hxx=0.19.1
+# @install: lix --silent download "haxelib:/tink_hxx#0.19.1" into tink_hxx/0.19.1/haxelib
+-lib tink_parse
+-lib tink_anon
+-cp ${HAXE_LIBCACHE}/tink_hxx/0.19.1/haxelib/src
