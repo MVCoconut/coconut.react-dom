@@ -5,9 +5,9 @@ import tink.domspec.EventFrom;
 import tink.domspec.ClassName;
 import tink.core.Callback;
 
-typedef DomElement<E:js.html.Element> = react.ReactComponent.ReactSingleFragment;
+typedef DomElement<E:js.html.DOMElement> = react.ReactComponent.ReactSingleFragment;
 
-typedef ReactEvents<Target:Element> = {
+typedef ReactEvents<Target:js.html.DOMElement> = {
   @:hxx(onwheel) @:optional var onWheel:Callback<EventFrom<Target, WheelEvent>>;
   
   @:hxx(oncopy) @:optional var onCopy:Callback<EventFrom<Target, ClipboardEvent>>;
