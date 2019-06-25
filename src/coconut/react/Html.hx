@@ -42,6 +42,10 @@ typedef ReactEvents<Target:js.html.DOMElement> = {
   @:hxx(oninput) @:optional var onInput:Callback<EventFrom<Target, Event>>;
   @:hxx(oninvalid) @:optional var onInvalid:Callback<EventFrom<Target, Event>>;
   
+  @:hxx(oncompositionstart) @:optional var onCompositionStart:Callback<EventFrom<Target, Event>>;
+  @:hxx(oncompositionupdate) @:optional var onCompositionUpdate:Callback<EventFrom<Target, Event>>;
+  @:hxx(oncompositionend) @:optional var onCompositionEnd:Callback<EventFrom<Target, Event>>;
+  
   @:hxx(onkeydown) @:optional var onKeyDown:Callback<EventFrom<Target, KeyboardEvent>>;
   @:hxx(onkeypress) @:optional var onKeyPress:Callback<EventFrom<Target, KeyboardEvent>>;
   @:hxx(onkeyup) @:optional var onKeyUp:Callback<EventFrom<Target, KeyboardEvent>>;
