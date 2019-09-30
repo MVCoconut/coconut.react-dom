@@ -6,7 +6,7 @@ class Renderer {
     react.ReactDOM.render(vdom, target);
 
   static public function getNative(view:View):Null<js.html.Node>
-    return react.ReactDOM.findDOMNode(view);
+    return react.ReactDOM.findDOMNode(cast view);
 
   static public inline function updateAll()
     tink.state.Observable.updateAll();
