@@ -32,14 +32,14 @@ script:
 jobs:
   include:
     # - stage: test # should uncomment this when there is no matrix above (e.g. only one os, one env, etc)
-    # - stage: deploy
-    #   os: linux
-    #   install:
-    #     - npm i -g lix
-    #     - lix download
-    #   script: skip
-    #   env:
-    #     secure: xxx
-    #   after_success:
-    #     - lix run travix install
-    #     - lix run travix release
+    - stage: deploy
+      os: linux
+      install:
+        - npm i -g lix
+        - lix download
+      script: skip
+      env:
+        secure: Z1Gk9+K2I72XahBeKRGaHblbL5ROKpu/mz2Eq3FTMwE1mTqP/picqFCgsq1/Cn+E36Qv3EJb1xnybqqsrO/1uVfvySQSAkhIIHPYNUg+wP9yqjVKYTy+nKeCH9qayG+cJlqlt6+DYfpJO2pdzeRwvSyw6rhJiR0oHafOLhHkNQI2kMmldae7q7SeAK9d7nLkcLmyBY5LvWZRy2jcJgRzk8MvUO4Yi5OF+88UW05nq6SqMyHw7rH0/sbU4GkZsKwgwmLRQ3/DQf9lWEXpRhXDPIaCfZ0e62C1Q8j3RxOTpTQpoOAI+oMfAa2Q7p9IKJPKJfbZUpeb62gal5QP+MlCo+opO3KIutMp20eIoNN5NVPkr2WnlRq0d3B3fn7yyVd5qJXgZFy9iANXA0vYHUb4OQSU6vCE9l34tJYN0Y4SuwMA5MCXwTRFmZ5idPz87Z2clF4xOTiJqRfnHBKboOLufezQYXzFxjWFYAlGzdMMaqSHH74dzQ2ta0HKYXBcPHquR8kGROJR3HZhI9W87hsswMK3ZRV90dRHgMD1cMclPxQREzLstPXWdo8CzVuqUq/fxyojqrmhwIX6pH3FmYLUz6AJkHpMB8SKciK6lh+XW0Qy2g3vdxHiD68M5xC6z50BTLdRGtp9+r/fVGHJizhl+XnOXcRWIkkc6+2Rht4JJOA=
+      after_success:
+        - lix run travix install
+        - lix run travix release
