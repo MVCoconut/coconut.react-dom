@@ -13,7 +13,7 @@
     "back2dos"
   ],
   "releasenote": "initial release",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "url": "https://github.com/MVCoconut/coconut.react-dom/",
   "dependencies": {
     "coconut.react-core": "",
