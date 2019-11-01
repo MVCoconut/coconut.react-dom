@@ -6,11 +6,17 @@ import travix.Logger.*;
 class RunTests {
 
   static function main() {
-    Renderer.mount(
-      cast js.Browser.document.createDivElement(),
-      coconut.Ui.hxx('<div>Hello, world!</div>')
-    );
-    println('it works');
+    try {
+      
+      Renderer.mount(
+        cast js.Browser.document.createDivElement(),
+        coconut.Ui.hxx('<div>Hello, world!</div>')
+      );
+      println('it works');
+    } catch(e:Dynamic) {
+      trace(e);
+      println(Std.string(e));
+    }
     exit(0); // make sure we exit properly, which is necessary on some targets, e.g. flash & (phantom)js
   }
   
