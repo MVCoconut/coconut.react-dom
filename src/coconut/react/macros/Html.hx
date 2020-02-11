@@ -42,7 +42,7 @@ class Html {
           var fields = (macro class { 
             @:optional var key(default, never):coconut.react.Key; 
             @:optional var ref(default, never):coconut.ui.Ref<$et>;
-            @:hxxCustomAttributes(~/^(aria-(selected|label))|(data-.*)$/)
+            @:hxxCustomAttributes(~/^(aria-(selected|label|labelledBy|hidden))|(data-.*)$/)
             @:optional var $NAMELESS(default, never):CustomAttr;
           }).fields;
 
