@@ -1,4 +1,4 @@
-package coconut.ui;
+package coconut.react;
 
 class Renderer {
 
@@ -14,5 +14,5 @@ class Renderer {
   #end
 
   static public macro function hxx(e)
-    return coconut.ui.macros.HXX.parse(e, 'coconut.react.View.createFragment');
+    return coconut.react.macros.HXX.parse(e);
 }
