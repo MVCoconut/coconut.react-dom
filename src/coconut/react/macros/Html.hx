@@ -79,7 +79,7 @@ class Html {
           if (tag.kind != VOID) {
             args.push({
               name: 'children',
-              type: macro : coconut.ui.Children,
+              type: macro : coconut.react.Children,
               opt: true
             });
             callArgs.push(macro children);
