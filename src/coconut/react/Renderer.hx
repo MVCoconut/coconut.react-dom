@@ -1,8 +1,8 @@
-package coconut.ui;
+package coconut.react;
 
 class Renderer {
 
-  static public function mount(target:js.html.Element, vdom:RenderResult)
+  static public function mountInto(target:js.html.Element, vdom:RenderResult)
     react.ReactDOM.render(vdom, target);
 
   static public function getNative(view:View):Null<js.html.Node>
@@ -10,5 +10,8 @@ class Renderer {
 
   static public inline function updateAll()
     tink.state.Observable.updateAll();
-  
+
+  static public macro function hxx(e);
+
+  static public macro function mount(target, markup);
 }

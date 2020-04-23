@@ -1,7 +1,6 @@
--D coconut.react-core=0.1.0
-# @install: lix --silent download "gh://github.com/MVCoconut/coconut.react-core#842457e7dfa0ced5a5c52e270a82d3f0dafb0660" into coconut.react-core/0.1.0/github/842457e7dfa0ced5a5c52e270a82d3f0dafb0660
+# @install: lix --silent download "gh://github.com/MVCoconut/coconut.react#a6ea79792947ced43364cd5ecbf2dc4e3c687d6a" into coconut.react-core/0.1.0/github/a6ea79792947ced43364cd5ecbf2dc4e3c687d6a
 -lib coconut.ui
 -lib react-next
--cp ${HAXE_LIBCACHE}/coconut.react-core/0.1.0/github/842457e7dfa0ced5a5c52e270a82d3f0dafb0660/src
+-cp ${HAXE_LIBCACHE}/coconut.react-core/0.1.0/github/a6ea79792947ced43364cd5ecbf2dc4e3c687d6a/src
+-D coconut.react-core=0.1.0
 --macro coconut.react.macros.Setup.all()
--D hxx_fragment=coconut.ui.ViewBase.createFragment
