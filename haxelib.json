@@ -1,23 +1,23 @@
 {
-  "name": "coconut.react-dom",
-  "license": "MIT",
-  "tags": [
-    "coconut",
-    "react",
-    "html",
-    "ui",
-    "reactive"
-  ],
-  "classPath": "src",
-  "contributors": [
-    "back2dos",
-    "kevinresol"
-  ],
-  "releasenote": "initial release",
-  "version": "0.1.0",
-  "url": "https://github.com/MVCoconut/coconut.react-dom/",
-  "dependencies": {
-    "coconut.react-core": "",
-    "tink_domspec": ""
-  }
+	"name": "coconut.react-dom",
+	"classPath": "src",
+	"dependencies": {
+		"coconut.react-core": "",
+		"tink_domspec": ""
+	},
+	"url": "https://github.com/MVCoconut/coconut.react-dom/",
+	"contributors": [
+		"back2dos",
+		"kevinresol"
+	],
+	"version": "0.2.0",
+	"releasenote": "Adjust for multibackend support.",
+	"tags": [
+		"coconut",
+		"react",
+		"html",
+		"ui",
+		"reactive"
+	],
+	"license": "MIT"
 }
