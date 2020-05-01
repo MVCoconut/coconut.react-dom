@@ -1,5 +1,5 @@
 -D coconut.react-dom
 -lib coconut.react-core
--lib xDOM
+-lib tink_domspec
 -cp src
 extraParams.hxml
