@@ -10,8 +10,8 @@
 		"back2dos",
 		"kevinresol"
 	],
-	"version": "0.2.0",
-	"releasenote": "Adjust for multibackend support.",
+	"version": "0.3.0",
+	"releasenote": "Support more aria attributes.",
 	"tags": [
 		"coconut",
 		"react",
