@@ -1,6 +1,6 @@
 -cp tests
 -main RunTests
--dce full
+# -dce full
 
 -D react_global
 -lib embed-js
