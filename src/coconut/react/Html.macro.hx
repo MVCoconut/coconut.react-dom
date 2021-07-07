@@ -1,6 +1,5 @@
-package coconut.react.macros;
+package coconut.react;
 
-#if macro
 import haxe.macro.Context;
 import haxe.macro.Expr;
 import tink.domspec.Macro.tags;
@@ -103,4 +102,3 @@ class Html {
   }
 
 }
-#end

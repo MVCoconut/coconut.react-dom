@@ -118,7 +118,7 @@ typedef ReactEvents<Target:js.html.DOMElement> = {
     return if (b != true) js.Lib.undefined else '';
 }
 
-@:build(coconut.react.macros.Html.buildApi())
+@:build(coconut.react.Html.buildApi())
 class Html {
   static public function raw(attr:RawAttr)
     return h(switch attr.tag { case null: 'span'; case v: v; }, { className: attr.className, dangerouslySetInnerHTML: { __html: attr.content } });
