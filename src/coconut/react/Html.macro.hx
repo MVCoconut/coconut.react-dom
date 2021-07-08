@@ -7,10 +7,6 @@ import tink.domspec.Macro.getAria;
 using tink.MacroApi;
 
 class Html {
-
-  static function registerTags()
-    coconut.react.macros.HXX.defaults.whenever(tink.hxx.Tag.extractAllFrom(macro coconut.react.Html));
-
   static var NAMELESS = '';
 
   static var reactAttributes = {
