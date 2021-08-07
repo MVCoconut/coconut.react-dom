@@ -4,6 +4,7 @@ import haxe.macro.Context;
 import haxe.macro.Expr;
 import tink.domspec.Macro.tags;
 import tink.domspec.Macro.getAria;
+using haxe.macro.Tools;
 using tink.MacroApi;
 
 class Html {
@@ -97,4 +98,7 @@ class Html {
     return ret;
   }
 
+  static function init() {
+    Context.getType('coconut.react.Html').getClass();
+  }
 }
