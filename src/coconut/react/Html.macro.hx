@@ -4,13 +4,10 @@ import haxe.macro.Context;
 import haxe.macro.Expr;
 import tink.domspec.Macro.tags;
 import tink.domspec.Macro.getAria;
+using haxe.macro.Tools;
 using tink.MacroApi;
 
 class Html {
-
-  static function registerTags()
-    coconut.react.macros.HXX.defaults.whenever(tink.hxx.Tag.extractAllFrom(macro coconut.react.Html));
-
   static var NAMELESS = '';
 
   static var reactAttributes = {
@@ -101,4 +98,7 @@ class Html {
     return ret;
   }
 
+  static function init() {
+    Context.getType('coconut.react.Html').getClass();
+  }
 }

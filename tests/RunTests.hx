@@ -1,13 +1,14 @@
 package ;
 
 import coconut.ui.*;
+import coconut.react.Html.*;
 import travix.Logger.*;
 
 class RunTests {
 
   static function main() {
     try {
-      
+
       Renderer.mount(
         cast js.Browser.document.createDivElement(),
         coconut.Ui.hxx('<div>Hello, world!</div>')
@@ -19,7 +20,7 @@ class RunTests {
     }
     exit(0); // make sure we exit properly, which is necessary on some targets, e.g. flash & (phantom)js
   }
-  
+
 }
 
 class Example extends View {

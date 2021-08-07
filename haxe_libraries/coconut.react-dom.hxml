@@ -2,4 +2,3 @@
 -lib coconut.react-core
 -lib tink_domspec
 -cp src
-extraParams.hxml

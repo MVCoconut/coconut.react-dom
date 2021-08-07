@@ -1,8 +1,8 @@
-# @install: lix --silent download "gh://github.com/MVCoconut/coconut.react-core#1d3455cc0574f1d00d683fdccd875aae3ccc98de" into coconut.react-core/0.2.2/github/1d3455cc0574f1d00d683fdccd875aae3ccc98de
+# @install: lix --silent download "gh://github.com/MVCoconut/coconut.react-core#acec63aec68858712924ed91258773bb33ab3544" into coconut.react-core/0.2.2/github/acec63aec68858712924ed91258773bb33ab3544
 -lib coconut.ui
 -lib react-next
 -lib tink_priority
--cp ${HAXE_LIBCACHE}/coconut.react-core/0.2.2/github/1d3455cc0574f1d00d683fdccd875aae3ccc98de/src
+-cp ${HAXE_LIBCACHE}/coconut.react-core/0.2.2/github/acec63aec68858712924ed91258773bb33ab3544/src
 -D coconut.react-core=0.2.2
 --macro coconut.react.macros.Setup.all()
 -D coconut_react_core
