@@ -1,9 +1,6 @@
-# @install: lix --silent download "haxelib:/react-next#1.120.0" into react-next/1.120.0/haxelib
--lib js-object
 -lib tink_hxx
--cp ${HAXE_LIBCACHE}/react-next/1.120.0/haxelib/src/lib
--D react-next=1.120.0
---macro react.jsx.JsxStaticMacro.addHook()
---macro addGlobalMetadata('', '@:build(react.jsx.JsxStaticMacro.build())')
-
--D react=1.120.0
+-lib js-object
+-cp ${SCOPE_DIR}/..\..\haxe-react/src/lib
+-D react-next=1.122.0
+${SCOPE_DIR}/..\..\haxe-react/extraParams.hxml
+--macro Sys.println("haxe_libraries/react-next.hxml:4: [Warning] Using dev version of library react-next")
