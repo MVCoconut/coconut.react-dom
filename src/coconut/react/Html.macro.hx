@@ -3,7 +3,6 @@ package coconut.react;
 import haxe.macro.Context;
 import haxe.macro.Expr;
 import tink.domspec.Macro.tags;
-import tink.domspec.Macro.getAria;
 using tink.MacroApi;
 
 class Html {
@@ -25,11 +24,7 @@ class Html {
 
   static function buildApi() {
     var ret = Context.getBuildFields();
-    var custom = {
-      var aria = [for (a in getAria()) a.name].join('|');
-
-      EConst(CRegexp('^$aria|(data-.*)$', '')).at((macro null).pos);
-    }
+    var custom = macro ~/^(aria-|data-).+$/;
 
     for (name in tags.keys()) {
 
@@ -51,6 +46,11 @@ class Html {
             @:hxxCustomAttributes($custom)
             @:optional var $NAMELESS(default, never):CustomAttr;
           }).fields;
+
+          if (name == 'select')
+            fields.push((macro class {
+              @:optional var value(default, never):haxe.extern.EitherType<String, Array<String>>;
+            }).fields[0]);
 
           for (f in tag.attr.toType().sure().getFields().sure()) {
             var reactName = switch reactAttributes[f.name] {
