@@ -3,6 +3,7 @@ package coconut.react;
 import haxe.macro.Context;
 import haxe.macro.Expr;
 import tink.domspec.Macro.tags;
+import tink.domspec.Macro.getAria;
 using tink.MacroApi;
 
 class Html {
@@ -24,7 +25,11 @@ class Html {
 
   static function buildApi() {
     var ret = Context.getBuildFields();
-    var custom = macro ~/^(aria-|data-).+$/;
+    var custom = {
+      var aria = [for (a in getAria()) a.name].join('|');
+
+      EConst(CRegexp('^$aria|(data-.*)$', '')).at((macro null).pos);
+    }
 
     for (name in tags.keys()) {
 
