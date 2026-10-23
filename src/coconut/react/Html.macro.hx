@@ -52,7 +52,7 @@ class Html {
             @:optional var $NAMELESS(default, never):CustomAttr;
           }).fields;
 
-          if (name == 'select')
+          if (name == 'select' && Context.defined('coconut_react_dom_select_value'))
             fields.push((macro class {
               @:optional var value(default, never):haxe.extern.EitherType<String, Array<String>>;
             }).fields[0]);
