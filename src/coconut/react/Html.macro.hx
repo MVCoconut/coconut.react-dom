@@ -52,6 +52,11 @@ class Html {
             @:optional var $NAMELESS(default, never):CustomAttr;
           }).fields;
 
+          if (name == 'select')
+            fields.push((macro class {
+              @:optional var value(default, never):haxe.extern.EitherType<String, Array<String>>;
+            }).fields[0]);
+
           for (f in tag.attr.toType().sure().getFields().sure()) {
             var reactName = switch reactAttributes[f.name] {
               case null: null;

@@ -13,9 +13,18 @@ class RunTests {
         coconut.Ui.hxx('<div>Hello, world!</div>')
       );
       println('it works');
+      switch SelectValue.run() {
+        case []:
+          println('select values work');
+        case failures:
+          for (f in failures)
+            println(f);
+          exit(500);
+      }
     } catch(e:Dynamic) {
       trace(e);
       println(Std.string(e));
+      exit(500);
     }
     exit(0); // make sure we exit properly, which is necessary on some targets, e.g. flash & (phantom)js
   }
