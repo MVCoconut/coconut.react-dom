@@ -3,7 +3,7 @@ Coconut rendering through react-dom.
 
 ## Controlled selects
 
-Enable `-D coconut_react_dom_select_value` to use React's controlled select API:
+Selects support React's `value`:
 
 ```haxe
 <select value=$selected onchange=${event -> selected = event.currentTarget.value}>
@@ -13,5 +13,5 @@ Enable `-D coconut_react_dom_select_value` to use React's controlled select API:
 ```
 
 The `value` prop accepts a string, or an array of strings for multiple selection.
-This is opt-in because these templates are not portable to `coconut.html` or
-`coconut.vdom`, which use `selected` on individual options instead.
+`coconut.vdom` and `coconut.html` support it the same way, so such templates
+stay portable (including server side rendering with hydration).
